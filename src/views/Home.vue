@@ -159,7 +159,7 @@ export default {
                     setTimeout(() => {
                         this.toggling = false;
                         alert('Failed to send direct method')
-                    }, 2000);
+                    }, 1500);
                     console.log(err);
                 });
         },
