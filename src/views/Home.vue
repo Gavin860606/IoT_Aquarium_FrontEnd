@@ -113,7 +113,7 @@ export default {
             let mode = this.automode ? 1 : 0;
             console.log("mode:", mode);
             this.$axios
-                .post(`http://172.25.205.154:80/api/changemode`, {
+                .post(`https://wemosd1dp.azurewebsites.net/api/changemode`, {
                     mode: mode,
                 })
                 .then((result) => {
@@ -145,7 +145,7 @@ export default {
         changeFanSpeed() {
             this.toggling = true;
             this.$axios
-                .post(`http://172.25.205.154:80/api/changefanspeed`, {
+                .post(`https://wemosd1dp.azurewebsites.net/api/changefanspeed`, {
                     fanspeed: parseInt(this.setPwm),
                 })
                 .then((result) => {
